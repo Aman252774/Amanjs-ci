@@ -5,11 +5,10 @@ on:
     branches: main
 
   pull_request:
-    branches: main
+    branches: master
 
 jobs:
-  on-pull:
-     if: github.event_name == 'pull_request'
+  on-pull_request:
      runs-on: ubuntu-latest
  
      steps:
